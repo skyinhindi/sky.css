@@ -1,0 +1,153 @@
+/*
+sky.css v1.0
+Author: Aakash Chaudhary
+Initial Release:
+Licence:Public Domain
+*/
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  /*Global Variables*/
+  --primary-color:#222;
+  --secondary-color:#2196F3;
+
+  }
+  
+  article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+  }
+
+body{
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+/*Themes*/
+
+.dark{
+  background-color: rgb(15, 15, 15);
+  color: #fff;
+}
+
+.light{
+  background-color: #fff;
+  color:var(--primary-color);
+}
+
+.charcoal{
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/*Layouts*/
+.grid-2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*Sizing*/
+p{
+  width: 80%;
+  margin: auto;
+}
+/*Alignment*/
+/*Images*/
+
+img{
+  position: relative;
+  display: inline-block;
+  font-size: 0.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 30px;
+  height: 100px;
+  width: 100px;
+}
+  /*Broken Image*/
+  img::after{
+    display: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 100px;
+    padding: 10px 20px 10px 45px;
+    border: dashed 1px var(--primary-color);
+    background-color: #fff;
+    background-image: url(error.svg);
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: 15px 10px;
+    z-index: 1;
+    content: "" attr(alt) " Not Found";
+  }
+/*Header*/
+.hero{
+  background-image: url("sky.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.hero h1{
+  font-size: 120pt;
+}
+
+
+/*Navigation*/
+/*Headers*/
+/*Buttons*/
+.btn{
+
+}
+
+.btn-1{
+
+}
+
+.btn-2{
+
+}
+
+/*Fonts*/
+/*Footers*/
+
+.footer{
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  height: auto;
+  padding: 10px;
+  background: var(--primary-color);
+  color: #fff;
+  text-align: center;
+}
+
+.footer-alt{
+
+}
+
+
+
